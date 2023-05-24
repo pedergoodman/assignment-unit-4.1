@@ -78,9 +78,48 @@ console.log(getLast(filledArray));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
 function find(value, array) {
-//  for (i in array)
+  for (i of array) {
+    if (i === value) {
+      return true;
+    } 
+  }
+  return false;
 }
+
+console.log(find('item 3', filledArray));
+console.log(find('item 6', filledArray));
+
+
+// first attempt 
+// function find(value, array) {
+//  for (i of array) {
+//    if (i === value) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+
+
+
+// test outside of function
+
+  // for  (i of filledArray) {
+  //   console.log(i);
+  //   if (i === 'item 3') {
+  //     console.log(true);
+  //   } else {
+  //     console.log(false);
+  //   }
+  // }
+
+
+
+
+
 
 // ----------------------
 // Stretch Goals
@@ -112,6 +151,9 @@ function allPositive() {
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+
+
 
 
 // DO NOT MODIFY
