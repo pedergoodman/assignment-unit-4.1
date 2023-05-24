@@ -23,7 +23,7 @@ function helloName(name) {
 }
 
 // Remember to call the function to test
-console.log( 'Test - should say "Hello World!"', helloName('Peder') );
+console.log( 'Test - should say "Hello, Peder!":', helloName('Peder') );
 
 
 // 3. Function to add two numbers together & return the result
@@ -32,7 +32,7 @@ function addNumbers(firstNumber, secondNumber) {
   return firstNumber + secondNumber;
 }
 
-console.log( 'Test - 5 + 24 should be 29', addNumbers(5, 24) );
+console.log( 'Test - should be 29:', addNumbers(5, 24) );
 
 
 
@@ -41,7 +41,7 @@ function multiplyThree(numOne, numTwo, numThree) {
   return numOne * numTwo * numThree;
 }
 
-console.log( 'Test - 6 * 6 * 6, should be 216', multiplyThree(6, 6, 6) );
+console.log( 'Test - should be 216:', multiplyThree(6, 6, 6) );
 
 
 // 5. Function that will return true if a number is positive, 
@@ -71,8 +71,8 @@ function getLast(array) {
   return array[array.length - 1];
 }
 
-console.log(getLast(emptyArray));
-console.log(getLast(filledArray));
+console.log('test - array should be "item 5":', getLast(filledArray));
+console.log('test - array should be undefined:', getLast(emptyArray));
 
 
 // 7. Function to find a value in an array. Return true if the 
@@ -88,8 +88,8 @@ function find(value, array) {
   return false;
 }
 
-console.log(find('item 3', filledArray));
-console.log(find('item 6', filledArray));
+console.log('should return true:', find('item 3', filledArray));
+console.log('should return false:', find('item 6', filledArray));
 
 
 // first attempt 
@@ -101,8 +101,6 @@ console.log(find('item 6', filledArray));
 //     return false;
 //   }
 // }
-
-
 
 
 // test outside of function
@@ -146,7 +144,8 @@ function sumAll(array) {
   // TODO: return the sum
   return sum;
 }
-console.log( sumAll([1, 2, 3, 4, 5]) );
+
+console.log('sumAll should be 15:', sumAll([1, 2, 3, 4, 5]) );
 
 
 // 10. Function to return a new array of all positive (greater than zero)
@@ -166,14 +165,14 @@ function allPositive(array) {
   return result;
 }
 
-console.log('Test -- Original array is:', arrayOne);
-console.log('Output -- allPositive result is:', allPositive(arrayOne));
+console.log('Test -- Original array is:\n\t', arrayOne);
+console.log('Output -- allPositive result is:\n\t', allPositive(arrayOne));
 
-console.log('Test -- Original array is:', arrayTwo);
-console.log('Output -- allPositive result is:', allPositive(arrayTwo));
+console.log('Test -- Original array is:\n\t', arrayTwo);
+console.log('Output -- allPositive result is:\n\t', allPositive(arrayTwo));
 
-console.log('Test -- Original array is:', arrayThree);
-console.log('Output -- allPositive result is:', allPositive(arrayThree));
+console.log('Test -- Original array is:\n\t', arrayThree);
+console.log('Output -- allPositive result is:\n\t', allPositive(arrayThree));
 
 
 
