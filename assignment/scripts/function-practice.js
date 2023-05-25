@@ -80,7 +80,7 @@ console.log('test - array should be undefined:', getLast(emptyArray));
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
 function find(value, array) {
-  for (i of array) {
+  for (let i of array) {
     if (i === value) {
       return true;
     } 
@@ -94,7 +94,7 @@ console.log('should return false:', find('item 6', filledArray));
 
 // first attempt 
 // function find(value, array) {
-//  for (i of array) {
+//  for (let i of array) {
 //    if (i === value) {
 //     return true;
 //   } else {
@@ -105,7 +105,7 @@ console.log('should return false:', find('item 6', filledArray));
 
 // test outside of function
 
-  // for  (i of filledArray) {
+  // for  (let i of filledArray) {
   //   console.log(i);
   //   if (i === 'item 3') {
   //     console.log(true);
@@ -138,7 +138,7 @@ console.log('isFirstLetter - should say false', isFirstLetter('z', 'apple'));
 function sumAll(array) {
   let sum = 0;
   // TODO: loop to add items
-  for (i of array) {
+  for (let i of array) {
     sum += i
   }
   // TODO: return the sum
@@ -157,7 +157,7 @@ let arrayThree = [4234, -234, 234, -765, 234, 194, -234, 3246, -2765]
 
 function allPositive(array) {
   let result = []
-  for (i of array) {
+  for (let i of array) {
     if (i > 0) {
       result.push(i)
     }
